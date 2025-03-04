@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Rozpoznaj grę</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz: Rozpoznaj grę</h1>
+        
+        <div id="quiz-container">
+            <img id="game-image" src="" alt="Screenshot z gry">
+            <div id="options"></div>
+            <button id="confirm-button" class="hidden">✅ Potwierdź</button>
+            <button id="next-button" class="hidden">➡ Dalej</button>
+        </div>
+
+        <div id="result-container" class="hidden">
+            <h1>Quiz: Rozpoznaj grę</h1>
+            <h2>Koniec quizu!</h2>
+            <p id="final-score"></p>
+        
+            <div class="button-container">
+                <button id="show-answers">🔍 Zobacz odpowiedzi</button>
+                <button id="restart-quiz">🔄 Zagraj ponownie</button>
+                <button id="choose-another-quiz">🏠 Wybierz inny quiz</button>
+            </div>
+        </div>
+        
+        <!-- Sekcja przeglądu odpowiedzi (domyślnie ukryta) -->
+        <div id="review-container" class="hidden">
+            <h2>Twoje odpowiedzi:</h2>
+            <div id="review-list"></div>
+    
+            <div class="button-container">
+                <button id="back-to-results">⬅️ Powrót do wyników</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
